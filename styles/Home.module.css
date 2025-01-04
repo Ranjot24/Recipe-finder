@@ -1,0 +1,118 @@
+/* styles/Home.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.input, .select {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 80%;
+  max-width: 400px;
+  transition: 0.3s;
+}
+
+.input:focus, .select:focus {
+  border-color: #5cb85c;
+  outline: none;
+}
+
+.searchButton {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 80%;
+  max-width: 400px;
+  transition: background-color 0.3s;
+}
+
+.searchButton:hover {
+  background-color: #4cae4c;
+}
+
+.searchButton:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.recipeList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.recipeCard {
+  background-color: #8fa38f;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.recipeCard:hover {
+  transform: translateY(-10px);
+}
+
+.recipeImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.recipeTitle {
+  font-family: 'Lora', serif;
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color:rgb(255, 255, 255);
+}
+
+.recipeTime {
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.recipeLink {
+  font-size: 1rem;
+  color: #dbdbdb;
+  text-decoration: none;
+}
+
+.recipeLink:hover {
+  text-decoration: underline;
+}
+
+.noRecipes {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+}
